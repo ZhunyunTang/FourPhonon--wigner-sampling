@@ -44,7 +44,7 @@ y = data[:, 4]  # 第五列
 z = data[:, z_column]  # 
 
 cmap = plt.get_cmap('rainbow')
-cmap = cmap(np.linspace(0.15, 1.0, 256))  # 选择 jet 颜色映射中的 0.1 到 0.9 之间的部分
+cmap = cmap(np.linspace(0.15, 1.0, 256))  # 
 cmap = mcolors.LinearSegmentedColormap.from_list('rainbow_partial', cmap)
 
 norm = mcolors.LogNorm(vmin=1e-10, vmax=1e-6)
