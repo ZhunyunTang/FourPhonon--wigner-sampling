@@ -20,6 +20,6 @@ Z. Tang et al.,  []()
 
 https://github.com/FourPhonon/FourPhonon
 
-##PS
+## PS:
 
 Please contact us for removal if there is any infringement.
