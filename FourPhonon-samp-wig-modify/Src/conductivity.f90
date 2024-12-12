@@ -103,7 +103,7 @@ open(unit=20, file='ThConductivityMode_fre', status='replace', action='write')
              ThConductivityCohMode(ii,kk,jj,:,:)=ThConductivityCohMode(ii,jj,kk,:,:)
              ThConductivityCoh(kk,jj,:,:)=ThConductivityCoh(jj,kk,:,:)
          ! zhunyun
-         write(10, '(I4, I4, I4, E14.5, E14.5, 3E14.5)') ii,  jj, kk, omega(ii,jj), omega(ii,kk), &
+         write(10, '(I6, I6, I6, E14.5, E14.5, 3E14.5)') ii,  jj, kk, omega(ii,jj), omega(ii,kk), &
                 ThConductivityCohMode(ii,jj,kk,1,1), ThConductivityCohMode(ii,jj,kk,2,2), ThConductivityCohMode(ii,jj,kk,3,3)
           end do
           fBE=1.d0/(exp(hbar*omega(ii,jj)/Kb/T)-1.D0)
@@ -112,7 +112,7 @@ open(unit=20, file='ThConductivityMode_fre', status='replace', action='write')
     ThConductivityMode(ii,jj,:,:)=1e21*hbar**2*ThConductivityMode(ii,jj,:,:)/(kB*T*T*V*nptk)
               call symmetrize_tensor(ThConductivityMode(ii,jj,:,:))
           ThConductivity(jj,:,:)=ThConductivity(jj,:,:)+ThConductivityMode(ii,jj,:,:)
-         write(20, '(I4, I4, E14.5, 3E14.5)') ii, jj, omega(ii,jj), &
+         write(20, '(I6, I6, E14.5, 3E14.5)') ii, jj, omega(ii,jj), &
                 ThConductivityMode(ii,jj,1,1), ThConductivityMode(ii,jj,2,2), ThConductivityMode(ii,jj,3,3)
        end do
     end do
