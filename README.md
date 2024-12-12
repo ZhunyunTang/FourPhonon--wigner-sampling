@@ -22,4 +22,4 @@ https://github.com/FourPhonon/FourPhonon
 
 ## PS:
 
-Please contact us for removal if there is any infringement.
+Please contact me for removal if there is any infringement.
