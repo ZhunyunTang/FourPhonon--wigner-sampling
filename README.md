@@ -14,12 +14,10 @@ For any questions or concerns, please email: 1207375975@qq.com
 
 ## Reference:
 
-Z. Tang et al.,  []()
+Z. Tang et al.,  [Phys. Rev. Materials 9. 093401 (2025)](https://doi.org/10.1103/ybjz-t8q1)
 
 ## Original FourPhonon code:
 
 https://github.com/FourPhonon/FourPhonon
 
-## PS:
 
-Please contact me for removal if there is any infringement.
