@@ -267,7 +267,9 @@ program ShengBTE
         do ll=1,Nlist
            write(1,"(3E20.10)") velocity(list(ll),ii,:)
            do jj=1,Nbands
-              write(2,"(3E20.10)") velocity_offdiag(list(ll),ii,jj,:)
+              if(ii /= jj) then
+                 write(2,"(3E20.10)") velocity_offdiag(list(ll),ii,jj,:)
+              end if
            end do
         end do
      end do
